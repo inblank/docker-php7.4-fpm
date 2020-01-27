@@ -9,4 +9,4 @@ RUN  apk upgrade --update \
     && printf "\n" | pecl install ssh2-1.2 \
     && printf "\n" | pecl install xdebug \
     && docker-php-ext-enable redis mongodb amqp ssh2 xdebug \
-    && docker-php-ext-install bcmath bz2 calendar exif opcache pdo_mysql pdo_pgsql intl zip soap gd xsl
+    && docker-php-ext-install bcmath bz2 calendar exif opcache pdo_mysql pdo_pgsql intl zip soap gd xsl pcntl sockets
