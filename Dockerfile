@@ -1,4 +1,4 @@
-FROM php:7.4.10-fpm-alpine
+FROM php:7.4.13-fpm-alpine
 RUN  apk upgrade --update \
     && apk add --no-cache libzip-dev bzip2-dev postgresql-dev icu-dev libmemcached-dev libxml2-dev \
         libxslt-dev libgcrypt-dev libjpeg-turbo-dev libpng-dev freetype-dev rabbitmq-c-dev libssh2-dev \
