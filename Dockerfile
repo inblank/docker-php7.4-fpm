@@ -16,4 +16,4 @@ RUN  apk upgrade --update \
     && printf "\n" | CPPFLAGS="-DHAVE_SYS_FILE_H" pecl install dbase \
     && printf "\n" | pecl install swoole \
     && docker-php-ext-enable redis memcached memcache mongodb amqp ssh2 xdebug rar dbase swoole \
-    && docker-php-ext-install bcmath bz2 calendar exif opcache pdo_mysql pdo_pgsql intl zip soap gd xsl pcntl sockets imap
+    && docker-php-ext-install bcmath bz2 calendar exif opcache mysqli pdo_mysql pdo_pgsql intl zip soap gd xsl pcntl sockets imap
